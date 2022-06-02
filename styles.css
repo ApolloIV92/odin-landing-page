@@ -2,6 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0px;
+    flex: 1;
+    font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -11,6 +13,7 @@ body {
     padding: 10px 450px;
     font-size: 24px;
     margin: 0px;
+    flex: 1 0 50px;
 }
 
 .header a {
@@ -24,21 +27,88 @@ body {
 .first-segment {
     display: flex;
     background-color: #1F2937;
-    padding: 75px 450px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    flex: 1 0 300px;
+    padding: 10px 445px;
+    margin: 0px;
+    gap: 80px;
 }
 
 .second-segment {
     display: flex;
     justify-content: center;
     gap: 75px;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    padding: 10px 445px;
+}
+
+.third-segment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    flex: 1 1 300px;
+    padding: 10px 445px;
+}
+
+.fourth-segment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 300px;
+    padding: 10px 445px;
+}
+
+.fourth-segment button {
+    width: 100px;
+    height: 40px;
+    border-color: white;
+    box-shadow: none;
+}
+
+.footer {
+    display: flex;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 75px;
+    padding: 10px 445px;
+}
+
+.rectangle {
+    width: 1000px;
+    height: 150px;
+    background-color: #3882F6;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rectangle p {
+    margin: 5px;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    margin-bottom: -10px;
+}
+
+.signature {
+    padding-left: 400px;
+    font-weight: bold;
 }
 
 .second-segment img {
     border: 5px solid #3882F6;
     border-radius: 10px;
 }
+
 .content {
     width: 500px;
 }
@@ -53,6 +123,15 @@ body {
 
 .container {
     width: 300px;
+    min-width: 0;
+}
+
+.paragraph-top {
+    font-size: 24px;
+    font-weight: 800;
+}
+.paragraph {
+
 }
 
 ul {
@@ -67,7 +146,7 @@ a {
     text-decoration: none;
 }
 
-.logo, .hero-main {
+.logo, .hero-main, .paragraph-top {
     color: #F9FAF8;
 }
 
@@ -76,7 +155,7 @@ a {
     font-weight: 1000;
 }
 
-.hero-secondary {
+.hero-secondary, .paragraph, .footer {
     color: #E5E7EB;
 }
 
@@ -85,5 +164,6 @@ a {
     padding: 8px;
     color: #F9FAF8;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 12px;
 }
+
